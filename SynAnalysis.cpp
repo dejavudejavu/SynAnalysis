@@ -393,7 +393,7 @@ void initGrammer()
         word = new char[i + 1];
         memcpy(word, array, i);
         word[i] = '\0';
-        cout << word<<endl;
+        //cout << word<<endl;
         codeNum = 0;
         codeNum = seekCodeNum(word);
         if (codeNum != 0)
@@ -417,34 +417,37 @@ void initGrammer()
         }
     }
     procNum = line - 1;
-    printf("************************************C语言文法******************************\n\n");
+    fstream outfile;
+    outfile.open("C语言文法.txt", ios::out);
+    outfile<<"************************************C语言文法******************************\n\n";
     for (int i = 1; i < line; i++)
     {
         for (int j = 1; j < Max_Length; j++)
         {
             if (proc[i][j] != -1)
             {
-                printf("%s ", searchMapping(proc[i][j]));
+                outfile<<searchMapping(proc[i][j]);
             }
             else
             {
                 break;
             }
         }
-        printf("\n");
+        outfile<<"\n";
     }
-    printf("\n************************************文法终结符******************************\n\n");
+    outfile<<"\n************************************文法终结符******************************\n\n";
     for (int i = 0; i < terMap.size(); i++)
     {
-        printf("%s ", terMap[i].first);
+        outfile<<terMap[i].first;
     }
-    printf("\n");
-    printf("\n************************************文法非终结符******************************\n\n");
+    outfile<<"\n";
+    outfile<<"\n************************************文法非终结符******************************\n\n";
     for (int i = 0; i < nonTerMap.size(); i++)
     {
-        printf("%s ", nonTerMap[i].first);
+        outfile<<nonTerMap[i].first;
     }
-    printf("\n");
+    outfile<<"\n";
+    outfile.close();
 }
 //将s集合合并至d集合中，type = 1代表包括空（$）,type = 2代表不包括空
 void merge(int* d, int* s, int type)
@@ -585,7 +588,7 @@ void firstSet(int i)
 {
     int k = 0;
     int currentNon = nonTerMap[i].second;//当前的非终结符标号
-    cout << "当前非终结符标号:" << currentNon << " " << "当前非终结符:" << nonTerMap[i].first<<endl;
+    //cout << "当前非终结符标号:" << currentNon << " " << "当前非终结符:" << nonTerMap[i].first<<endl;
     //依次遍历全部产生式
     for (int j = 1; j <= procNum; j++) //j代表第几个产生式
     {
@@ -683,25 +686,28 @@ void First()
 {
     //先求出能直接推出空的非终结符集合
     nullSet(GRAMMAR_NULL);
-    printf("\n");
+    fstream outfile;
+    outfile.open("First集.txt", ios::out);
+    outfile<<"\n";
     for (int i = 0; i < nonTerMap.size(); i++)
     {
         firstSet(i);
     }
-    printf("\n************************************First集******************************\n\n");
+    outfile<<"\n************************************First集******************************\n\n";
     for (int i = 0; i < nonTerMap.size(); i++)
     {
-        printf("First[%s] = ", nonTerMap[i].first);
+        outfile<<"First["<< nonTerMap[i].first<<"] = ";
         for (int j = 0;; j++)
         {
             if (first[i][j] == -1)
             {
                 break;
             }
-            printf("%s ", searchMapping(first[i][j]));
+            outfile<<searchMapping(first[i][j]);
         }
-        printf("\n");
+        outfile<<"\n";
     }
+    outfile.close();
 }
 //将First结合起来的函数
 void connectFirstSet(int* p)
@@ -947,20 +953,23 @@ void Follow()
         followRecu[0] = -1;
         followSet(i);
     }
-    printf("\n************************************Follow集******************************\n\n");
+    fstream outfile;
+    outfile.open("Follow集.txt", ios::out);
+    outfile<<"\n************************************Follow集******************************\n\n";
     for (int i = 0; i < nonTerMap.size(); i++)
     {
-        printf("Follow[%s] = ", nonTerMap[i].first);
+        outfile<<"Follow[%s] = ", nonTerMap[i].first;
         for (int j = 0;; j++)
         {
             if (follow[i][j] == -1)
             {
                 break;
             }
-            printf("%s ", searchMapping(follow[i][j]));
+            outfile<<searchMapping(follow[i][j]);
         }
-        printf("\n");
+        outfile<<"\n";
     }
+    outfile.close();
 }
 //求已经分解的产生式对应的Select集,注意Select集中不能含有空($),因而Type=2
 void Select()
@@ -1019,20 +1028,23 @@ void Select()
             }
         }
     }
-    printf("\n************************************Select集******************************\n\n");
+    fstream outfile;
+    outfile.open("Select集.txt", ios::out);
+    outfile<<"\n************************************Select集******************************\n\n";
     for (int i = 0; i < procNum; i++)
     {
-        printf("Select[%d] = ", i + 1);
+        outfile<<"Select["<<i + 1<<"] = ";
         for (int j = 0;; j++)
         {
             if (select[i][j] == -1)
             {
                 break;
             }
-            printf("%s ", searchMapping(select[i][j]));
+            outfile<<"%s ", searchMapping(select[i][j]);
         }
-        printf("\n");
+        outfile<<"\n";
     }
+    outfile.close();
 }
 //输出预测分析表
 void MTable()

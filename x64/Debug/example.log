@@ -1,0 +1,3 @@
+﻿  SynAnalysis.cpp
+C:\Users\情若炎兮\source\repos\SynAnalysis\SynAnalysis.cpp(98): warning C4715: “searchMapping”: 不是所有的控件路径都返回值
+  example.vcxproj -> C:\Users\情若炎兮\source\repos\SynAnalysis\x64\Debug\example.exe

@@ -1,0 +1,76 @@
+
+************************************Follow¼¯******************************
+
+Follow[%s] = #
+Follow[%s] = intcharvoid}ifwhiledofor{idscanfprintf;return
+Follow[%s] = void
+Follow[%s] = #
+Follow[%s] = voidintchar
+Follow[%s] = ,;(
+Follow[%s] = voidintchar
+Follow[%s] = voidintchar
+Follow[%s] = ;
+Follow[%s] = )
+Follow[%s] = }
+Follow[%s] = 
+Follow[%s] = 
+Follow[%s] = 
+Follow[%s] = 
+Follow[%s] = digitid(+-character
+Follow[%s] = id(+-digitcharacter
+Follow[%s] = +-id(digitcharacter
+Follow[%s] = 
+Follow[%s] = ;,)]<<=>>=!===+-*/
+Follow[%s] = ),
+Follow[%s] = ;,)]<<=>>=!===+-*/
+Follow[%s] = ;,)]<<=>>=!===+-*/
+Follow[%s] = ;,)]<<=>>=!===+-*/
+Follow[%s] = digitid(+-character
+Follow[%s] = ,;(=[)]<<=>>=!===+-*/
+Follow[%s] = 
+Follow[%s] = digit
+Follow[%s] = digit
+Follow[%s] = ,;(=
+Follow[%s] = ,;(=
+Follow[%s] = intcharvoid}ifwhiledofor{idscanfprintf;returnconst
+Follow[%s] = ;
+Follow[%s] = intcharvoid}ifwhiledofor{idscanfprintf;returnconst
+Follow[%s] = ;
+Follow[%s] = ;
+Follow[%s] = }ifwhiledofor{idscanfprintf;return
+Follow[%s] = }ifwhiledofor{idscanfprintf;returnintchar
+Follow[%s] = ;
+Follow[%s] = }ifwhiledofor{idscanfprintf;returnintchar
+Follow[%s] = id
+Follow[%s] = ,;
+Follow[%s] = ,;
+Follow[%s] = (
+Follow[%s] = }
+Follow[%s] = )
+Follow[%s] = )];<<=>>=!===,
+Follow[%s] = )];<<=>>=!===,+-
+Follow[%s] = )];<<=>>=!===,
+Follow[%s] = )];<<=>>=!===,+-*/
+Follow[%s] = )];<<=>>=!===,+-
+Follow[%s] = )];<<=>>=!===,+-*/
+Follow[%s] = )
+Follow[%s] = elsewhile}ifdofor{idscanfprintf;return
+Follow[%s] = elsewhile}ifdofor{idscanfprintf;return
+Follow[%s] = elsewhile}ifdofor{idscanfprintf;return
+Follow[%s] = ;
+Follow[%s] = ;
+Follow[%s] = ;
+Follow[%s] = ;
+Follow[%s] = ;
+Follow[%s] = ;
+Follow[%s] = =
+Follow[%s] = =
+Follow[%s] = );
+Follow[%s] = elsewhile}ifdofor{idscanfprintf;return
+Follow[%s] = )
+Follow[%s] = )
+Follow[%s] = }
+Follow[%s] = )
+Follow[%s] = )
+Follow[%s] = )
+Follow[%s] = ;

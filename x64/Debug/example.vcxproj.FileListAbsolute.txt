@@ -1,0 +1,2 @@
+C:\Users\情若炎兮\source\repos\SynAnalysis\x64\Debug\example.exe
+C:\Users\情若炎兮\source\repos\SynAnalysis\x64\Debug\example.pdb
