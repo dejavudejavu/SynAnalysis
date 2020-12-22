@@ -30,5 +30,6 @@ int main()
     MTable();
     Analysis();
     close();
+    printf("test");
     return 0;
 }
