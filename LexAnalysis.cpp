@@ -286,21 +286,24 @@ void printNodeLink()
 {
     NormalNode* p = normalHead;
     p = p->next;
-    cout << "************************************分析表******************************" << endl << endl;
-    cout << setw(30) << "内容" << setw(10) << "描述" << "\t" << "种别码" << "\t" << "地址" << "\t" << "行号" << endl;
+    fstream outfile;
+    outfile.open("分析表.txt", ios::out);
+    outfile << "************************************分析表******************************" << endl << endl;
+    outfile << setw(30) << "内容" << setw(10) << "描述" << "\t" << "种别码" << "\t" << "地址" << "\t" << "行号" << endl;
     while (p != NULL)
     {
         if (p->type == IDENFR)
         {
-            cout << setw(30) << p->content << setw(10) << p->describe << "\t" << p->type << "\t" << p->addr << "\t" << p->line << endl;
+            outfile << setw(30) << p->content << setw(10) << p->describe << "\t" << p->type << "\t" << p->addr << "\t" << p->line << endl;
         }
         else
         {
-            cout << setw(30) << p->content << setw(10) << p->describe << "\t" << p->type << "\t" << "\t" << p->line << endl;
+            outfile << setw(30) << p->content << setw(10) << p->describe << "\t" << p->type << "\t" << "\t" << p->line << endl;
         }
         p = p->next;
     }
-    cout << endl << endl;
+    outfile << endl << endl;
+    outfile.close();
 }
 /*
 错误种类：
@@ -315,30 +318,33 @@ void printNodeLink()
 */
 void printErrorLink()
 {
-    ErrorNode* p = errorHead;
-    p = p->next;
-    cout << "************************************错误表******************************" << endl << endl;
-    cout << setw(10) << "内容" << setw(30) << "描述" << "\t" << "类型" << "\t" << "行号" << endl;
-    while (p != NULL)
-    {
-        cout << setw(10) << p->content << setw(30) << p->describe << "\t" << p->type << "\t" << p->line << endl;
-        p = p->next;
-    }
-    cout << endl << endl;
+    //ErrorNode* p = errorHead;
+    //p = p->next;
+    //cout << "************************************错误表******************************" << endl << endl;
+    //cout << setw(10) << "内容" << setw(30) << "描述" << "\t" << "类型" << "\t" << "行号" << endl;
+    //while (p != NULL)
+    //{
+    //    cout << setw(10) << p->content << setw(30) << p->describe << "\t" << p->type << "\t" << p->line << endl;
+    //    p = p->next;
+    //}
+    //cout << endl << endl;
 }
 //标志符表，有重复部分，暂不考虑
 void printIdentLink()
 {
     IdentiferNode* p = idenHead;
     p = p->next;
-    cout << "************************************标志符表******************************" << endl << endl;
-    cout << setw(30) << "内容" << setw(10) << "描述" << "\t" << "种别码" << "\t" << "地址" << "\t" << "行号" << endl;
+    fstream outfile;
+    outfile.open("标志符表.txt", ios::out);
+    outfile << "************************************标志符表******************************" << endl << endl;
+    outfile << setw(30) << "内容" << setw(10) << "描述" << "\t" << "种别码" << "\t" << "地址" << "\t" << "行号" << endl;
     while (p != NULL)
     {
-        cout << setw(30) << p->content << setw(10) << p->describe << "\t" << p->type << "\t" << p->addr << "\t" << p->line << endl;
+        outfile << setw(30) << p->content << setw(10) << p->describe << "\t" << p->type << "\t" << p->addr << "\t" << p->line << endl;
         p = p->next;
     }
-    cout << endl << endl;
+    outfile << endl << endl;
+    outfile.close();
 }
 int mystrlen(char* word)
 {
