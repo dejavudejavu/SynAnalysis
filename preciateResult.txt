@@ -1,0 +1,959 @@
+第1步
+符号栈:＜程序＞ # 
+输入栈:const int id = digit , id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜程序＞->＜1＞＜26＞＜主函数＞
+
+第2步
+符号栈:＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:const int id = digit , id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜1＞->＜常量说明＞＜1＞
+
+第3步
+符号栈:＜常量说明＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:const int id = digit , id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜常量说明＞->const＜常量定义＞;＜2＞
+
+第4步
+符号栈:const ＜常量定义＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:const int id = digit , id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第5步
+符号栈:＜常量定义＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:int id = digit , id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜常量定义＞->＜10＞=＜整数＞＜3＞
+
+第6步
+符号栈:＜10＞ = ＜整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:int id = digit , id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜10＞->int＜标识符＞
+
+第7步
+符号栈:int ＜标识符＞ = ＜整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:int id = digit , id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第8步
+符号栈:＜标识符＞ = ＜整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:id = digit , id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜标识符＞->id
+
+第9步
+符号栈:id = ＜整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:id = digit , id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第10步
+符号栈:= ＜整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:= digit , id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第11步
+符号栈:＜整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:digit , id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜整数＞->＜7＞＜无符号整数＞
+
+第12步
+符号栈:＜7＞ ＜无符号整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:digit , id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜7＞->$
+
+第13步
+符号栈:＜无符号整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:digit , id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜无符号整数＞->digit＜6＞
+
+第14步
+符号栈:digit ＜6＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:digit , id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第15步
+符号栈:＜6＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:, id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜6＞->$
+
+第16步
+符号栈:＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:, id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜3＞->,＜标识符＞=＜整数＞＜3＞
+
+第17步
+符号栈:, ＜标识符＞ = ＜整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:, id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第18步
+符号栈:＜标识符＞ = ＜整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜标识符＞->id
+
+第19步
+符号栈:id = ＜整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:id = digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第20步
+符号栈:= ＜整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:= digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第21步
+符号栈:＜整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜整数＞->＜7＞＜无符号整数＞
+
+第22步
+符号栈:＜7＞ ＜无符号整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜7＞->$
+
+第23步
+符号栈:＜无符号整数＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜无符号整数＞->digit＜6＞
+
+第24步
+符号栈:digit ＜6＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:digit ; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第25步
+符号栈:＜6＞ ＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜6＞->$
+
+第26步
+符号栈:＜3＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜3＞->$
+
+第27步
+符号栈:; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:; const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第28步
+符号栈:＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜2＞->$
+
+第29步
+符号栈:＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜1＞->＜常量说明＞＜1＞
+
+第30步
+符号栈:＜常量说明＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜常量说明＞->const＜常量定义＞;＜2＞
+
+第31步
+符号栈:const ＜常量定义＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:const char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第32步
+符号栈:＜常量定义＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜常量定义＞->＜11＞=＜字符＞＜12＞
+
+第33步
+符号栈:＜11＞ = ＜字符＞ ＜12＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜11＞->char＜标识符＞
+
+第34步
+符号栈:char ＜标识符＞ = ＜字符＞ ＜12＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:char id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第35步
+符号栈:＜标识符＞ = ＜字符＞ ＜12＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜标识符＞->id
+
+第36步
+符号栈:id = ＜字符＞ ＜12＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:id = character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第37步
+符号栈:= ＜字符＞ ＜12＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:= character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第38步
+符号栈:＜字符＞ ＜12＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜字符＞->character
+
+第39步
+符号栈:character ＜12＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:character ; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第40步
+符号栈:＜12＞ ; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜12＞->$
+
+第41步
+符号栈:; ＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:; int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第42步
+符号栈:＜2＞ ＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜2＞->$
+
+第43步
+符号栈:＜1＞ ＜26＞ ＜主函数＞ # 
+输入栈:int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜1＞->$
+
+第44步
+符号栈:＜26＞ ＜主函数＞ # 
+输入栈:int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜26＞->＜27＞＜26＞
+
+第45步
+符号栈:＜27＞ ＜26＞ ＜主函数＞ # 
+输入栈:int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜27＞->＜29＞＜28＞
+
+第46步
+符号栈:＜29＞ ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜29＞->＜10＞
+
+第47步
+符号栈:＜10＞ ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜10＞->int＜标识符＞
+
+第48步
+符号栈:int ＜标识符＞ ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:int id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第49步
+符号栈:＜标识符＞ ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜标识符＞->id
+
+第50步
+符号栈:id ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:id ; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第51步
+符号栈:＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜28＞->;
+
+第52步
+符号栈:; ＜26＞ ＜主函数＞ # 
+输入栈:; char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第53步
+符号栈:＜26＞ ＜主函数＞ # 
+输入栈:char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜26＞->＜27＞＜26＞
+
+第54步
+符号栈:＜27＞ ＜26＞ ＜主函数＞ # 
+输入栈:char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜27＞->＜29＞＜28＞
+
+第55步
+符号栈:＜29＞ ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜29＞->＜11＞
+
+第56步
+符号栈:＜11＞ ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜11＞->char＜标识符＞
+
+第57步
+符号栈:char ＜标识符＞ ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:char id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第58步
+符号栈:＜标识符＞ ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜标识符＞->id
+
+第59步
+符号栈:id ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:id ; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第60步
+符号栈:＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜28＞->;
+
+第61步
+符号栈:; ＜26＞ ＜主函数＞ # 
+输入栈:; int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第62步
+符号栈:＜26＞ ＜主函数＞ # 
+输入栈:int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜26＞->＜27＞＜26＞
+
+第63步
+符号栈:＜27＞ ＜26＞ ＜主函数＞ # 
+输入栈:int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜27＞->＜29＞＜28＞
+
+第64步
+符号栈:＜29＞ ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜29＞->＜10＞
+
+第65步
+符号栈:＜10＞ ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜10＞->int＜标识符＞
+
+第66步
+符号栈:int ＜标识符＞ ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:int id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第67步
+符号栈:＜标识符＞ ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜标识符＞->id
+
+第68步
+符号栈:id ＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:id ( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第69步
+符号栈:＜28＞ ＜26＞ ＜主函数＞ # 
+输入栈:( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜28＞->(＜参数表＞){＜复合语句＞}
+
+第70步
+符号栈:( ＜参数表＞ ) { ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:( int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第71步
+符号栈:＜参数表＞ ) { ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜参数表＞->＜类型标识符＞＜标识符＞＜15＞
+
+第72步
+符号栈:＜类型标识符＞ ＜标识符＞ ＜15＞ ) { ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜类型标识符＞->int
+
+第73步
+符号栈:int ＜标识符＞ ＜15＞ ) { ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:int id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第74步
+符号栈:＜标识符＞ ＜15＞ ) { ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜标识符＞->id
+
+第75步
+符号栈:id ＜15＞ ) { ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id , int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第76步
+符号栈:＜15＞ ) { ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:, int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜15＞->,＜类型标识符＞＜标识符＞＜15＞
+
+第77步
+符号栈:, ＜类型标识符＞ ＜标识符＞ ＜15＞ ) { ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:, int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第78步
+符号栈:＜类型标识符＞ ＜标识符＞ ＜15＞ ) { ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜类型标识符＞->int
+
+第79步
+符号栈:int ＜标识符＞ ＜15＞ ) { ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:int id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第80步
+符号栈:＜标识符＞ ＜15＞ ) { ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜标识符＞->id
+
+第81步
+符号栈:id ＜15＞ ) { ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id ) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第82步
+符号栈:＜15＞ ) { ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜15＞->$
+
+第83步
+符号栈:) { ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:) { id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第84步
+符号栈:{ ＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:{ id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第85步
+符号栈:＜复合语句＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜复合语句＞->＜1＞＜4＞＜语句列＞
+
+第86步
+符号栈:＜1＞ ＜4＞ ＜语句列＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜1＞->$
+
+第87步
+符号栈:＜4＞ ＜语句列＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜4＞->$
+
+第88步
+符号栈:＜语句列＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜语句列＞->＜20＞
+
+第89步
+符号栈:＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜20＞->＜语句＞＜20＞
+
+第90步
+符号栈:＜语句＞ ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜语句＞->＜赋值语句＞;
+
+第91步
+符号栈:＜赋值语句＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜赋值语句＞->＜18＞=＜表达式＞
+
+第92步
+符号栈:＜18＞ = ＜表达式＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜18＞->＜标识符＞＜30＞
+
+第93步
+符号栈:＜标识符＞ ＜30＞ = ＜表达式＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜标识符＞->id
+
+第94步
+符号栈:id ＜30＞ = ＜表达式＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id = id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第95步
+符号栈:＜30＞ = ＜表达式＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:= id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜30＞->$
+
+第96步
+符号栈:= ＜表达式＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:= id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第97步
+符号栈:＜表达式＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜表达式＞->＜7＞＜项＞＜16＞
+
+第98步
+符号栈:＜7＞ ＜项＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜7＞->$
+
+第99步
+符号栈:＜项＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜项＞->＜因子＞＜17＞
+
+第100步
+符号栈:＜因子＞ ＜17＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜因子＞->＜标识符＞＜32＞
+
+第101步
+符号栈:＜标识符＞ ＜32＞ ＜17＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜标识符＞->id
+
+第102步
+符号栈:id ＜32＞ ＜17＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id + id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第103步
+符号栈:＜32＞ ＜17＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:+ id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜32＞->$
+
+第104步
+符号栈:＜17＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:+ id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜17＞->$
+
+第105步
+符号栈:＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:+ id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜16＞->＜加法运算符＞＜项＞＜16＞
+
+第106步
+符号栈:＜加法运算符＞ ＜项＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:+ id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜加法运算符＞->+
+
+第107步
+符号栈:+ ＜项＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:+ id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第108步
+符号栈:＜项＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜项＞->＜因子＞＜17＞
+
+第109步
+符号栈:＜因子＞ ＜17＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜因子＞->＜标识符＞＜32＞
+
+第110步
+符号栈:＜标识符＞ ＜32＞ ＜17＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜标识符＞->id
+
+第111步
+符号栈:id ＜32＞ ＜17＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id ; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第112步
+符号栈:＜32＞ ＜17＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜32＞->$
+
+第113步
+符号栈:＜17＞ ＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜17＞->$
+
+第114步
+符号栈:＜16＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜16＞->$
+
+第115步
+符号栈:; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:; return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第116步
+符号栈:＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜20＞->＜语句＞＜20＞
+
+第117步
+符号栈:＜语句＞ ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜语句＞->＜返回语句＞;
+
+第118步
+符号栈:＜返回语句＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜返回语句＞->return＜23＞
+
+第119步
+符号栈:return ＜23＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:return ( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第120步
+符号栈:＜23＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜23＞->(＜表达式＞)＜23＞
+
+第121步
+符号栈:( ＜表达式＞ ) ＜23＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:( id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第122步
+符号栈:＜表达式＞ ) ＜23＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜表达式＞->＜7＞＜项＞＜16＞
+
+第123步
+符号栈:＜7＞ ＜项＞ ＜16＞ ) ＜23＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜7＞->$
+
+第124步
+符号栈:＜项＞ ＜16＞ ) ＜23＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜项＞->＜因子＞＜17＞
+
+第125步
+符号栈:＜因子＞ ＜17＞ ＜16＞ ) ＜23＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜因子＞->＜标识符＞＜32＞
+
+第126步
+符号栈:＜标识符＞ ＜32＞ ＜17＞ ＜16＞ ) ＜23＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜标识符＞->id
+
+第127步
+符号栈:id ＜32＞ ＜17＞ ＜16＞ ) ＜23＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:id ) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第128步
+符号栈:＜32＞ ＜17＞ ＜16＞ ) ＜23＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜32＞->$
+
+第129步
+符号栈:＜17＞ ＜16＞ ) ＜23＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜17＞->$
+
+第130步
+符号栈:＜16＞ ) ＜23＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜16＞->$
+
+第131步
+符号栈:) ＜23＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:) ; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第132步
+符号栈:＜23＞ ; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜23＞->$
+
+第133步
+符号栈:; ＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:; } void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第134步
+符号栈:＜20＞ } ＜26＞ ＜主函数＞ # 
+输入栈:} void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜20＞->$
+
+第135步
+符号栈:} ＜26＞ ＜主函数＞ # 
+输入栈:} void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第136步
+符号栈:＜26＞ ＜主函数＞ # 
+输入栈:void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜26＞->$
+
+第137步
+符号栈:＜主函数＞ # 
+输入栈:void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜主函数＞->voidmain(){＜复合语句＞}
+
+第138步
+符号栈:void main ( ) { ＜复合语句＞ } # 
+输入栈:void main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第139步
+符号栈:main ( ) { ＜复合语句＞ } # 
+输入栈:main ( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第140步
+符号栈:( ) { ＜复合语句＞ } # 
+输入栈:( ) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第141步
+符号栈:) { ＜复合语句＞ } # 
+输入栈:) { printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第142步
+符号栈:{ ＜复合语句＞ } # 
+输入栈:{ printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第143步
+符号栈:＜复合语句＞ } # 
+输入栈:printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜复合语句＞->＜1＞＜4＞＜语句列＞
+
+第144步
+符号栈:＜1＞ ＜4＞ ＜语句列＞ } # 
+输入栈:printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜1＞->$
+
+第145步
+符号栈:＜4＞ ＜语句列＞ } # 
+输入栈:printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜4＞->$
+
+第146步
+符号栈:＜语句列＞ } # 
+输入栈:printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜语句列＞->＜20＞
+
+第147步
+符号栈:＜20＞ } # 
+输入栈:printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜20＞->＜语句＞＜20＞
+
+第148步
+符号栈:＜语句＞ ＜20＞ } # 
+输入栈:printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜语句＞->＜写语句＞;
+
+第149步
+符号栈:＜写语句＞ ; ＜20＞ } # 
+输入栈:printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜写语句＞->printf(＜22＞)
+
+第150步
+符号栈:printf ( ＜22＞ ) ; ＜20＞ } # 
+输入栈:printf ( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第151步
+符号栈:( ＜22＞ ) ; ＜20＞ } # 
+输入栈:( string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第152步
+符号栈:＜22＞ ) ; ＜20＞ } # 
+输入栈:string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜22＞->＜字符串＞＜33＞
+
+第153步
+符号栈:＜字符串＞ ＜33＞ ) ; ＜20＞ } # 
+输入栈:string ) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜字符串＞->string
+
+第154步
+符号栈:string ＜33＞ ) ; ＜20＞ } # 
+输入栈:string ) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第155步
+符号栈:＜33＞ ) ; ＜20＞ } # 
+输入栈:) ; printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜33＞->$
+
+第156步
+符号栈:) ; ＜20＞ } # 
+输入栈:) ; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第157步
+符号栈:; ＜20＞ } # 
+输入栈:; printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第158步
+符号栈:＜20＞ } # 
+输入栈:printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜20＞->＜语句＞＜20＞
+
+第159步
+符号栈:＜语句＞ ＜20＞ } # 
+输入栈:printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜语句＞->＜写语句＞;
+
+第160步
+符号栈:＜写语句＞ ; ＜20＞ } # 
+输入栈:printf ( id ( digit , digit ) ) ; } # 
+所用推出式：＜写语句＞->printf(＜22＞)
+
+第161步
+符号栈:printf ( ＜22＞ ) ; ＜20＞ } # 
+输入栈:printf ( id ( digit , digit ) ) ; } # 
+匹配!
+第162步
+符号栈:( ＜22＞ ) ; ＜20＞ } # 
+输入栈:( id ( digit , digit ) ) ; } # 
+匹配!
+第163步
+符号栈:＜22＞ ) ; ＜20＞ } # 
+输入栈:id ( digit , digit ) ) ; } # 
+所用推出式：＜22＞->＜表达式＞
+
+第164步
+符号栈:＜表达式＞ ) ; ＜20＞ } # 
+输入栈:id ( digit , digit ) ) ; } # 
+所用推出式：＜表达式＞->＜7＞＜项＞＜16＞
+
+第165步
+符号栈:＜7＞ ＜项＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:id ( digit , digit ) ) ; } # 
+所用推出式：＜7＞->$
+
+第166步
+符号栈:＜项＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:id ( digit , digit ) ) ; } # 
+所用推出式：＜项＞->＜因子＞＜17＞
+
+第167步
+符号栈:＜因子＞ ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:id ( digit , digit ) ) ; } # 
+所用推出式：＜因子＞->＜标识符＞＜32＞
+
+第168步
+符号栈:＜标识符＞ ＜32＞ ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:id ( digit , digit ) ) ; } # 
+所用推出式：＜标识符＞->id
+
+第169步
+符号栈:id ＜32＞ ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:id ( digit , digit ) ) ; } # 
+匹配!
+第170步
+符号栈:＜32＞ ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:( digit , digit ) ) ; } # 
+所用推出式：＜32＞->(＜值参数表＞)
+
+第171步
+符号栈:( ＜值参数表＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:( digit , digit ) ) ; } # 
+匹配!
+第172步
+符号栈:＜值参数表＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit , digit ) ) ; } # 
+所用推出式：＜值参数表＞->＜表达式＞＜34＞
+
+第173步
+符号栈:＜表达式＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit , digit ) ) ; } # 
+所用推出式：＜表达式＞->＜7＞＜项＞＜16＞
+
+第174步
+符号栈:＜7＞ ＜项＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit , digit ) ) ; } # 
+所用推出式：＜7＞->$
+
+第175步
+符号栈:＜项＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit , digit ) ) ; } # 
+所用推出式：＜项＞->＜因子＞＜17＞
+
+第176步
+符号栈:＜因子＞ ＜17＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit , digit ) ) ; } # 
+所用推出式：＜因子＞->＜整数＞
+
+第177步
+符号栈:＜整数＞ ＜17＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit , digit ) ) ; } # 
+所用推出式：＜整数＞->＜7＞＜无符号整数＞
+
+第178步
+符号栈:＜7＞ ＜无符号整数＞ ＜17＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit , digit ) ) ; } # 
+所用推出式：＜7＞->$
+
+第179步
+符号栈:＜无符号整数＞ ＜17＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit , digit ) ) ; } # 
+所用推出式：＜无符号整数＞->digit＜6＞
+
+第180步
+符号栈:digit ＜6＞ ＜17＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit , digit ) ) ; } # 
+匹配!
+第181步
+符号栈:＜6＞ ＜17＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:, digit ) ) ; } # 
+所用推出式：＜6＞->$
+
+第182步
+符号栈:＜17＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:, digit ) ) ; } # 
+所用推出式：＜17＞->$
+
+第183步
+符号栈:＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:, digit ) ) ; } # 
+所用推出式：＜16＞->$
+
+第184步
+符号栈:＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:, digit ) ) ; } # 
+所用推出式：＜34＞->,＜表达式＞＜34＞
+
+第185步
+符号栈:, ＜表达式＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:, digit ) ) ; } # 
+匹配!
+第186步
+符号栈:＜表达式＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit ) ) ; } # 
+所用推出式：＜表达式＞->＜7＞＜项＞＜16＞
+
+第187步
+符号栈:＜7＞ ＜项＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit ) ) ; } # 
+所用推出式：＜7＞->$
+
+第188步
+符号栈:＜项＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit ) ) ; } # 
+所用推出式：＜项＞->＜因子＞＜17＞
+
+第189步
+符号栈:＜因子＞ ＜17＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit ) ) ; } # 
+所用推出式：＜因子＞->＜整数＞
+
+第190步
+符号栈:＜整数＞ ＜17＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit ) ) ; } # 
+所用推出式：＜整数＞->＜7＞＜无符号整数＞
+
+第191步
+符号栈:＜7＞ ＜无符号整数＞ ＜17＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit ) ) ; } # 
+所用推出式：＜7＞->$
+
+第192步
+符号栈:＜无符号整数＞ ＜17＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit ) ) ; } # 
+所用推出式：＜无符号整数＞->digit＜6＞
+
+第193步
+符号栈:digit ＜6＞ ＜17＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:digit ) ) ; } # 
+匹配!
+第194步
+符号栈:＜6＞ ＜17＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:) ) ; } # 
+所用推出式：＜6＞->$
+
+第195步
+符号栈:＜17＞ ＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:) ) ; } # 
+所用推出式：＜17＞->$
+
+第196步
+符号栈:＜16＞ ＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:) ) ; } # 
+所用推出式：＜16＞->$
+
+第197步
+符号栈:＜34＞ ) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:) ) ; } # 
+所用推出式：＜34＞->$
+
+第198步
+符号栈:) ＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:) ) ; } # 
+匹配!
+第199步
+符号栈:＜17＞ ＜16＞ ) ; ＜20＞ } # 
+输入栈:) ; } # 
+所用推出式：＜17＞->$
+
+第200步
+符号栈:＜16＞ ) ; ＜20＞ } # 
+输入栈:) ; } # 
+所用推出式：＜16＞->$
+
+第201步
+符号栈:) ; ＜20＞ } # 
+输入栈:) ; } # 
+匹配!
+第202步
+符号栈:; ＜20＞ } # 
+输入栈:; } # 
+匹配!
+第203步
+符号栈:＜20＞ } # 
+输入栈:} # 
+所用推出式：＜20＞->$
+
+第204步
+符号栈:} # 
+输入栈:} # 
+匹配!
+第205步
+符号栈:# 
+输入栈:# 
+成功!

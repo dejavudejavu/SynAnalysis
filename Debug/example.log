@@ -1,0 +1,42 @@
+﻿cl : 命令行 warning D9002: 忽略未知选项“/utf8”
+  LexAnalysis.cpp
+C:\Users\杨荣东\Desktop\example\LexAnalysis.cpp(415,23): warning C4018: “<”: 有符号/无符号不匹配
+  SynAnalysis.cpp
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(74,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(82,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(90,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(105,19): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(130,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(142,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(236,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(244,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(251,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(260,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(269,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(437,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(443,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(687,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(692,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(722,27): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(734,31): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(750,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(762,27): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(790,31): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(803,35): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(859,27): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(945,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(951,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(973,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(1046,27): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(1061,31): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(1081,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(1083,27): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(1277,29): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(1285,29): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(1322,31): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(1330,31): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(1339,31): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(1347,31): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+C:\Users\杨荣东\Desktop\example\SynAnalysis.cpp(98): warning C4715: “searchMapping”: 不是所有的控件路径都返回值
+  example.vcxproj -> C:\Users\杨荣东\Desktop\example\Debug\example.exe
