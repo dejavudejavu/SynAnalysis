@@ -958,14 +958,14 @@ void Follow()
     outfile<<"\n************************************Follow¼¯******************************\n\n";
     for (int i = 0; i < nonTerMap.size(); i++)
     {
-        outfile<<"Follow[%s] = ", nonTerMap[i].first;
+        outfile << "Follow[" << nonTerMap[i].first << "] = ";
         for (int j = 0;; j++)
         {
             if (follow[i][j] == -1)
             {
                 break;
             }
-            outfile<<searchMapping(follow[i][j]);
+            outfile<<searchMapping(follow[i][j])<<" ";
         }
         outfile<<"\n";
     }
@@ -1040,7 +1040,7 @@ void Select()
             {
                 break;
             }
-            outfile<<"%s ", searchMapping(select[i][j]);
+            outfile<<searchMapping(select[i][j])<<" ";
         }
         outfile<<"\n";
     }

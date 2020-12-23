@@ -1,76 +1,76 @@
 
 ************************************Follow集******************************
 
-Follow[%s] = #
-Follow[%s] = intcharvoid}ifwhiledofor{idscanfprintf;return
-Follow[%s] = void
-Follow[%s] = #
-Follow[%s] = voidintchar
-Follow[%s] = ,;(
-Follow[%s] = voidintchar
-Follow[%s] = voidintchar
-Follow[%s] = ;
-Follow[%s] = )
-Follow[%s] = }
-Follow[%s] = 
-Follow[%s] = 
-Follow[%s] = 
-Follow[%s] = 
-Follow[%s] = digitid(+-character
-Follow[%s] = id(+-digitcharacter
-Follow[%s] = +-id(digitcharacter
-Follow[%s] = 
-Follow[%s] = ;,)]<<=>>=!===+-*/
-Follow[%s] = ),
-Follow[%s] = ;,)]<<=>>=!===+-*/
-Follow[%s] = ;,)]<<=>>=!===+-*/
-Follow[%s] = ;,)]<<=>>=!===+-*/
-Follow[%s] = digitid(+-character
-Follow[%s] = ,;(=[)]<<=>>=!===+-*/
-Follow[%s] = 
-Follow[%s] = digit
-Follow[%s] = digit
-Follow[%s] = ,;(=
-Follow[%s] = ,;(=
-Follow[%s] = intcharvoid}ifwhiledofor{idscanfprintf;returnconst
-Follow[%s] = ;
-Follow[%s] = intcharvoid}ifwhiledofor{idscanfprintf;returnconst
-Follow[%s] = ;
-Follow[%s] = ;
-Follow[%s] = }ifwhiledofor{idscanfprintf;return
-Follow[%s] = }ifwhiledofor{idscanfprintf;returnintchar
-Follow[%s] = ;
-Follow[%s] = }ifwhiledofor{idscanfprintf;returnintchar
-Follow[%s] = id
-Follow[%s] = ,;
-Follow[%s] = ,;
-Follow[%s] = (
-Follow[%s] = }
-Follow[%s] = )
-Follow[%s] = )];<<=>>=!===,
-Follow[%s] = )];<<=>>=!===,+-
-Follow[%s] = )];<<=>>=!===,
-Follow[%s] = )];<<=>>=!===,+-*/
-Follow[%s] = )];<<=>>=!===,+-
-Follow[%s] = )];<<=>>=!===,+-*/
-Follow[%s] = )
-Follow[%s] = elsewhile}ifdofor{idscanfprintf;return
-Follow[%s] = elsewhile}ifdofor{idscanfprintf;return
-Follow[%s] = elsewhile}ifdofor{idscanfprintf;return
-Follow[%s] = ;
-Follow[%s] = ;
-Follow[%s] = ;
-Follow[%s] = ;
-Follow[%s] = ;
-Follow[%s] = ;
-Follow[%s] = =
-Follow[%s] = =
-Follow[%s] = );
-Follow[%s] = elsewhile}ifdofor{idscanfprintf;return
-Follow[%s] = )
-Follow[%s] = )
-Follow[%s] = }
-Follow[%s] = )
-Follow[%s] = )
-Follow[%s] = )
-Follow[%s] = ;
+Follow[＜程序＞] = # 
+Follow[＜1＞] = int char void } if while do for { id scanf printf ; return 
+Follow[＜26＞] = void 
+Follow[＜主函数＞] = # 
+Follow[＜27＞] = void int char 
+Follow[＜29＞] = , ; ( 
+Follow[＜28＞] = void int char 
+Follow[＜无返回值函数定义＞] = void int char 
+Follow[＜14＞] = ; 
+Follow[＜参数表＞] = ) 
+Follow[＜复合语句＞] = } 
+Follow[//] = 
+Follow[＜25＞] = 
+Follow[＜24＞] = 
+Follow[＜有返回值函数定义＞] = 
+Follow[＜加法运算符＞] = digit id ( + - character 
+Follow[＜乘法运算符＞] = id ( + - digit character 
+Follow[＜关系运算符＞] = + - id ( digit character 
+Follow[＜数字＞] = 
+Follow[＜字符＞] = ; , ) ] < <= > >= != == + - * / 
+Follow[＜字符串＞] = ) , 
+Follow[＜无符号整数＞] = ; , ) ] < <= > >= != == + - * / 
+Follow[＜6＞] = ; , ) ] < <= > >= != == + - * / 
+Follow[＜整数＞] = ; , ) ] < <= > >= != == + - * / 
+Follow[＜7＞] = digit id ( + - character 
+Follow[＜标识符＞] = , ; ( = [ ) ] < <= > >= != == + - * / 
+Follow[＜8＞] = 
+Follow[＜9＞] = digit 
+Follow[＜字母＞] = digit 
+Follow[＜10＞] = , ; ( = 
+Follow[＜11＞] = , ; ( = 
+Follow[＜常量说明＞] = int char void } if while do for { id scanf printf ; return const 
+Follow[＜常量定义＞] = ; 
+Follow[＜2＞] = int char void } if while do for { id scanf printf ; return const 
+Follow[＜3＞] = ; 
+Follow[＜12＞] = ; 
+Follow[＜4＞] = } if while do for { id scanf printf ; return 
+Follow[＜变量说明＞] = } if while do for { id scanf printf ; return int char 
+Follow[＜变量定义＞] = ; 
+Follow[＜5＞] = } if while do for { id scanf printf ; return int char 
+Follow[＜类型标识符＞] = id 
+Follow[＜13＞] = , ; 
+Follow[＜31＞] = , ; 
+Follow[＜声明头部＞] = ( 
+Follow[＜语句列＞] = } 
+Follow[＜15＞] = ) 
+Follow[＜表达式＞] = ) ] ; < <= > >= != == , 
+Follow[＜项＞] = ) ] ; < <= > >= != == , + - 
+Follow[＜16＞] = ) ] ; < <= > >= != == , 
+Follow[＜因子＞] = ) ] ; < <= > >= != == , + - * / 
+Follow[＜17＞] = ) ] ; < <= > >= != == , + - 
+Follow[＜32＞] = ) ] ; < <= > >= != == , + - * / 
+Follow[＜值参数表＞] = ) 
+Follow[＜语句＞] = else while } if do for { id scanf printf ; return 
+Follow[＜条件语句＞] = else while } if do for { id scanf printf ; return 
+Follow[＜循环语句＞] = else while } if do for { id scanf printf ; return 
+Follow[＜有返回值函数调用语句＞] = ; 
+Follow[＜无返回值函数调用语句＞] = ; 
+Follow[＜赋值语句＞] = ; 
+Follow[＜读语句＞] = ; 
+Follow[＜写语句＞] = ; 
+Follow[＜返回语句＞] = ; 
+Follow[＜18＞] = = 
+Follow[＜30＞] = = 
+Follow[＜条件＞] = ) ; 
+Follow[＜19＞] = else while } if do for { id scanf printf ; return 
+Follow[＜步长＞] = ) 
+Follow[＜34＞] = ) 
+Follow[＜20＞] = } 
+Follow[＜21＞] = ) 
+Follow[＜22＞] = ) 
+Follow[＜33＞] = ) 
+Follow[＜23＞] = ; 
