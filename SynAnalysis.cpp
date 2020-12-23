@@ -1172,6 +1172,8 @@ void Analysis()
     //分析结果输出
 
     resultfile.open("preciateResult.txt", ios::out);
+    fstream outfile;
+    outfile.open("output.txt", ios::out);
 
     SeqStack s1, s2;
     int c1, c2;
@@ -1336,6 +1338,7 @@ void Analysis()
                 if (c1 == nameMap[i].second) {
                     const char* a = nameMap[i].first;
                     printf("%s\t\t", a);
+                    outfile << a <<"\t\t";
                     break;
                 }
             }
@@ -1345,6 +1348,7 @@ void Analysis()
                 {
                     const char* a = keyMap[i].first;
                     printf("%s\n", a);
+                    outfile << a <<endl;
                     break;
                 }
             }
@@ -1353,6 +1357,7 @@ void Analysis()
                 {
                     const char* a = operMap[i].first;
                     printf("%s\n", a);
+                    outfile << a << endl;
                     break;
                 }
             }
@@ -1361,6 +1366,7 @@ void Analysis()
                 {
                     const char* a = limitMap[i].first;
                     printf("%s\n", a);
+                    outfile << a << endl;
                     break;
                 }
             }

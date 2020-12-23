@@ -152,6 +152,7 @@
     <Text Include="C语言文法.txt" />
     <Text Include="First集.txt" />
     <Text Include="Follow集.txt" />
+    <Text Include="output.txt" />
     <Text Include="preciateResult.txt" />
     <Text Include="preciateTable.txt" />
     <Text Include="Select集.txt" />
@@ -159,6 +160,9 @@
     <Text Include="wenfa.txt" />
     <Text Include="分析表.txt" />
     <Text Include="标志符表.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisualStudio.gitignore" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
